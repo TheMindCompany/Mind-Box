@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>Message Expansion Demonstration</title>
+
+<style>
+
+body {  
+        margin:15px;
+		padding:0;
+        height:100%;
+        width:100%;
+		background-color:#EAEAEA;  }
+		
+ul {
+		padding:15px;
+		position:relative;
+		list-style-type: none;
+        text-align:left;  }
+
+li {
+		margin:10px
+		position:absolute;
+		display: inline;  }
+		
+#nav {
+	    position:relative;
+        margin:0 auto;
+        height:50px;
+        width:800px;
+        background-color:#CCC;
+	}
+	
+.content {
+	    position:relative;
+		display:block;
+        margin:10px auto;
+        min-height:500px;
+        width:800px;
+        background-color:#FFF;
+}
+		
+.content p{
+		font-size:24px;
+		line-height:35px;
+		padding:10px 45px;
+		text-align: justify;  }
+
+#haltPage {
+        display:none;
+		overflow:hidden;
+		overflow-style:marquee-block;
+        position:fixed;
+        height:100%;
+        width:100%;
+		left:0;
+        top:0px;
+        background-color:rgba(0, 0, 0, 0.4);         
+        z-index=9999;  }
+
+.wrong {
+        position:relative;
+        padding: 15px 45px;
+        margin:auto;
+        height:150px;
+        width:400px;
+        background-color:#CCC;
+        box-shadow:5px 10px 45px #000;  }
+
+.wrong h1 {
+        color:#C33;
+		font-weight:bold;  }
+
+.wrong p {
+        padding:0 10px;  }
+
+.wrong input {
+        padding:5px;
+		margin:10px;  }
+		
+</style>
+
+<script>
+	function wrong ( classID ) {
+		var on = 'block';
+		var halt = document.getElementById('haltPage').style;
+		var errMsg = document.getElementById(classID).style;
+		
+		clearClass ( );
+		halt.display = on;
+		errMsg.display = on;  }
+	
+	function clearClass ( ) {
+		var off = 'none';	
+		document.getElementById('haltPage').style.display = off;
+		document.getElementById('wrong1').style.display = off;
+		document.getElementById('wrong2').style.display = off;
+		document.getElementById('wrong3').style.display = off;
+	}
+
+</script>
+
+</head>
+
+<body>
+	<div id="nav">
+    <ul>
+        <li><a href="#" onClick="wrong('wrong1')">Wrong Answer One</a></li> | 
+        <li><a href="#" onClick="wrong('wrong2')">Wrong Answer Two</a></li> | 
+        <li><a href="#" onClick="wrong('wrong3')">Wrong Answer Three</a></li>
+    </ul>
+    </div>
+	
+<div class="content">
+    	<p>
+        	This is a demo!<br><br>
+            Author: Brandon Clark
+        </p>
+    </div>
+
+<!-- This is not seen untill called -->
+    <div id="haltPage">
+    <br><br><br>
+        <div id="wrong1" class="wrong">
+
+            <h1>Wrong #1</h1>
+            <p>
+                You are wrong<br>
+                <input value="Close" type="button" onClick="clearClass();"/>
+            </p>
+
+        </div>
+
+        <div id="wrong2" class="wrong">
+
+            <h1>Wrong #2</h1>
+            <p>
+                You are wrong<br>
+                <input value="Close" type="button" onClick="clearClass();"/>
+            </p>
+
+        </div>
+
+        <div id="wrong3" class="wrong">
+
+            <h1>Wrong #3</h1>
+            <p>
+                You are wrong<br>
+                <input value="Close" type="button" onClick="clearClass();"/>
+            </p>
+
+        </div>     
+
+    </div>
+
+</body>
+
+</html>

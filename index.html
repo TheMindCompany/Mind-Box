@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Mind Company</title>  
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="robots" content="INDEX, FOLLOW"/> 
+
+    <link rel="icon" href="images/favicon.png">
+  	<link rel="apple-touch-icon" href="images/favicon114.png">
+  	<link rel="apple-touch-icon-precomposed" href="images/favicon114.png">    
+     
+    <!--[if lt IE 9]>
+  	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  	<![endif]-->   
+
+	<link href="https://plus.google.com/104321729401342028595" rel="publisher" />
+    
+    <link href="css/mindGlobal.css" rel="stylesheet">
+    <link href="css/mindAni.css" rel="stylesheet">
+    <link href="css/mindShadow.css" rel="stylesheet">
+    <link href="css/mindContact.css" rel="stylesheet">
+    
+	<script src="js/mindPortalv1.js"></script> 
+    <script src="js/mindAdWords.js"></script> 
+</head>
+
+<body>
+<!-- Header Areas: (Constent visual)--> 
+<header>
+    <div id="headTopRow">
+        <div id="headerElement">  
+          
+            <canvas id='headLogo' width='292' height='128'>The Mind Company</canvas>   
+            <script src="js/mindLogo.js"></script>
+            
+            <div id="gplus"> 
+                <div class="g-plusone" data-size="medium" data-href="http://www.themindspot.com"></div>
+                <script src="js/mindAdSync.js"></script>
+            </div>
+            
+            <nav id="headNav">
+                <script>loadContent('headNav','nav.html', 'main');</script>
+            </nav>
+            
+            <nav id="subNav" class=" drop-shadow lifted">
+            </nav>
+            
+        </div>
+    </div>
+    
+</header>
+
+<!-- Content Areas: (Variable visual)-->
+<div id="contentBody">
+    <br>
+    <section class="aniDown" id="homePage">
+		<script>checkPage ( 'homePage', 'home.html', 'main');</script>
+    </section>
+    <section class="aniDown" id="aboutPage"></section>
+    <section class="aniDown" id="lessonsPage"></section>
+    <section class="aniDown" id="productPage"></section>
+    <section class="aniDown" id="contactPage"></section>
+</div>
+
+<!-- Footer Area: (Constant visual)-->
+<footer>
+
+	<!-- Footer Affiliates Navigation -->
+	<nav></nav>
+
+    <div id="footBottomRow">
+        <div id="footerElement">
+        
+            <div id="footNav" class="footLeft">
+                <h2>Navigation</h2>
+                <script>insertContent ( 'footNav', 'nav.html' );</script>
+            </div>
+            
+            <div id="footProjects" class="footLeft">
+                <script>loadContent ( 'footProjects', 'footProduct.html', 'main');</script>
+            </div>
+    
+            <div id="footSocial" class="footRight">
+                <script>loadContent ( 'footSocial', 'footSocial.html', 'main');</script>
+            </div>
+            
+        <small id="copyright">Copyright © 2012 The Mind Company | Site made with Mind Portal [ <a href="#">License</a> ]</small>
+        </div>
+    </div>
+</footer>
+
+<!-- User Message: (Variable visual)-->
+<section id="haltMsg"></section>
+
+</body>
+</html>

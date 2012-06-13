@@ -1,0 +1,83 @@
+<article class="drop-shadow curved curved-hz-2">
+		<h1>Content Disabled Message:</h1>
+		<h2>CSS display element toggle with JavaScript.</h2><br>
+		<p><b style="color:#F03;font-weight:bold;"> NOTE:</b> <br>Tutorial Content in Test. My original lesson can be found at '<a href="http://www.themindspot.com/lesson/ErrorMessageLessonOne.html">Content Disabled Message</a>'.<br><br>
+        This is a demonstration of how to create an inner page message that stops the user from doing anything else until the message dialog is closed.
+<br>        
+<ul class="hlist_ul">
+        <li class="hlist_li"><a href="#" onClick="intMsg ( 'message1' );">Initiate Message Window</a></li>
+</ul>
+<br><br> </p>
+
+<p>
+  To do this we utilize the CSS 'display' property by toggling  a 'div' on (block) and off (none).<br><br>
+  
+   We must set the 'div' CSS properties so that  the message object is the only thing that can be used by the user. This is done by making sure the object is  fixed to its position of a window that covers all content and is at the very top of the layer stack. <br><br>
+   
+   Be sure to set any overflow properties  correctly also so there is no miss alignment of your halt window that will  contain your message of choice.        
+                  <br> <br>
+          <b id="sourceDown">Source Code:</b> <a href="lesson/source/sourceMsgDisableScreen.zip">Here!</a>
+    
+  </p>
+  <h4>code : css</h4>
+  <pre><code>
+        #haltPage {
+        display:none;
+        position:fixed;
+        height:100%;
+        width:100%;
+        top:0px;
+        left:0px;
+        background-color:rgba(0, 0, 0, 0.4);         
+        z-index=9999;  }
+        
+        .wrong {
+        position:relative;
+        padding: 15px 45px;
+        margin:auto;
+        height:150px;
+        width:400px;
+        background-color:#CCC;
+        border:dotted 3px #000;
+        border-bottom-left-radius:0.5em 0.5em;
+        border-bottom-right-radius:0.5em 0.5em;
+        border-top-left-radius:0.5em 0.5em;
+        border-top-right-radius:0.5em 0.5em;
+        box-shadow:5px 10px 45px #000;  }
+  </code></pre>
+    
+    <h4>code : javascript</h4>
+    <pre><code>
+        function wrong ( classID ) {
+            var on = 'block';
+            var halt = document.getElementById('haltPage').style;
+            var errMsg = document.getElementById(classID).style;
+            
+            clearClass ( );
+            halt.display = on;
+            errMsg.display = on;  }
+        
+        function clearClass ( ) {
+            var off = 'none';	
+            document.getElementById('haltPage').style.display = off;
+            document.getElementById('wrong1').style.display = off;
+            document.getElementById('wrong2').style.display = off;
+            document.getElementById('wrong3').style.display = off;  }
+    </code></pre>
+ 
+    <h4>code : html4 compliant</h4>
+    <pre><code>
+        &lt;div id="haltPage">
+            &lt;div id="wrong1" class="wrong">
+                    &lt;input value="Close" type="button" onClick="clearMsg();"/>
+            &lt;/div>
+            &lt;div id="wrong2" class="wrong">
+                    &lt;input value="Close" type="button" onClick="clearMsg();"/>
+            &lt;/div>
+            &lt;div id="wrong3" class="wrong">
+                    &lt;input value="Close" type="button" onClick="clearMsg();"/>
+            &lt;/div>
+        &lt;/div>
+    </code></pre>
+</div>
+</article>

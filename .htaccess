@@ -1,0 +1,14 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^themindberry.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www.themindberry.com$
+RewriteRule ^/?$ "http\:\/\/blackberry\.themindspot\.com" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^mindblackberry.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www.mindblackberry.com$
+RewriteRule ^/?$ "http\:\/\/blackberry\.themindspot\.com" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^berrymind.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www.berrymind.com$
+RewriteRule ^/?$ "http\:\/\/blackberry\.themindspot\.com" [R=301,L]
+

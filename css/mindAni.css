@@ -1,0 +1,278 @@
+/* Transition Animations */
+.aniDown {
+z-index:0;
+-webkit-animation-name: slideDown;
+-webkit-animation-duration: 1s;
+-webkit-animation-iteration-count: 1;
+-webkit-animation-timing-function: ease-in;
+-webkit-animation-direction:normal;
+
+-moz-animation-name: slideDown;
+-moz-animation-duration: 1s;
+-moz-animation-iteration-count: 1;
+-moz-animation-timing-function: ease-in;
+-moz-animation-direction:normal;
+
+/* Currently Not Working in browsers: Is planed for implimentation in later versions. */
+animation-name: slideDown;
+animation-duration: 1s;
+animation-iteration-count: 1;
+animation-timing-function: ease-in;
+animation-direction: normal;
+
+-ms-animation-name: slideDown;
+-ms-animation-duration: 1s;
+-ms-animation-iteration-count: 1;
+-ms-animation-timing-function: ease-in;
+-ms-animation-direction:normal;
+}
+
+@-webkit-keyframes slideDown {
+0%   {margin-top:-3000px;}
+60%  {margin-top:-1000px;}
+100% {margin-top:0px;}
+}
+
+@-moz-keyframes slideDown {
+0%   {margin-top:-3000px;}
+60%  {margin-top:-1000px;}
+100% {margin-top:0px;}
+}
+
+@keyframes slideDown {
+0%   {margin-top:-3000px;}
+60%  {margin-top:-1000px;}
+100% {margin-top:0px;}
+}
+
+.aniUp {
+z-index:0;
+-webkit-animation-name: slideUp;
+-webkit-animation-duration: 2s;
+-webkit-animation-iteration-count: 1;
+-webkit-animation-timing-function: ease-in;
+-webkit-animation-direction:normal;
+
+-moz-animation-name: slideUp;
+-moz-animation-duration: 2s;
+-moz-animation-iteration-count: 1;
+-moz-animation-timing-function: ease-in;
+-moz-animation-direction:normal;
+
+/* Currently Not Working in browsers: Is planed for implimentation in later versions. */
+animation-name: slideUp;
+animation-duration: 2s;
+animation-iteration-count: 1;
+animation-timing-function: ease-in;
+animation-direction: normal;
+
+-ms-animation-name: slideUp;
+-ms-animation-duration: 2s;
+-ms-animation-iteration-count: 1;
+-ms-animation-timing-function: ease-in;
+-ms-animation-direction:normal;
+}
+
+@-webkit-keyframes slideUp {
+0%   {margin-top:0px;}
+45%  {margin-top:-1000px;}
+50% {margin-top:-3000px;}
+100% {margin-top:-3000px;}
+}
+
+@-moz-keyframes slideUp {
+0%   {margin-top:0px;}
+45%  {margin-top:-1000px;}
+50% {margin-top:-3000px;}
+100% {margin-top:-3000px;}
+}
+
+@keyframes slideUp {
+0%   {margin-top:0px;}
+45%  {margin-top:-1000px;}
+50% {margin-top:-3000px;}
+100% {margin-top:-3000px;}
+}
+
+.aniLeft {
+z-index:0;
+-webkit-animation-name: slideLeft;
+-webkit-animation-duration: 1s;
+-webkit-animation-iteration-count: 1;
+-webkit-animation-timing-function: ease-in;
+-webkit-animation-direction:normal;
+
+-moz-animation-name: slideLeft;
+-moz-animation-duration: 1s;
+-moz-animation-iteration-count: 1;
+-moz-animation-timing-function: ease-in;
+-moz-animation-direction:normal;
+
+/* Currently Not Working in browsers: Is planed for implimentation in later versions. */
+animation-name: slideLeft;
+animation-duration: 1s;
+animation-iteration-count: 1;
+animation-timing-function: ease-in;
+animation-direction: normal;
+
+-ms-animation-name: slideLeft;
+-ms-animation-duration: 1s;
+-ms-animation-iteration-count: 1;
+-ms-animation-timing-function: ease-in;
+-ms-animation-direction:normal;
+}
+
+@-webkit-keyframes slideLeft {
+0%   {margin-left:0px;}
+10%  {margin-left:-500px;}
+100% {margin-left:-3000px;}
+}
+
+@-moz-keyframes slideLeft {
+0%   {margin-left:0px;}
+10%  {margin-left:-500px;}
+100% {margin-left:-3000px;}
+}
+
+@keyframes slideLeft {
+0%   {margin-left:0px;}
+10%  {margin-left:-500px;}
+100% {margin-left:-3000px;}
+}
+
+.aniRight {
+z-index:0;
+-webkit-animation-name: slideRight;
+-webkit-animation-duration: 1s;
+-webkit-animation-iteration-count: 1;
+-webkit-animation-timing-function: ease-in;
+-webkit-animation-direction:normal;
+
+-moz-animation-name: slideRight;
+-moz-animation-duration: 1s;
+-moz-animation-iteration-count: 1;
+-moz-animation-timing-function: ease-in;
+-moz-animation-direction:normal;
+
+/* Currently Not Working in browsers: Is planed for implimentation in later versions. */
+animation-name: slideRight;
+animation-duration: 1s;
+animation-iteration-count: 1;
+animation-timing-function: ease-in;
+animation-direction: normal;
+
+-ms-animation-name: slideRight;
+-ms-animation-duration: 1s;
+-ms-animation-iteration-count: 1;
+-ms-animation-timing-function: ease-in;
+-ms-animation-direction:normal;
+}
+
+@-webkit-keyframes slideRight {
+0%   {margin-right:-3000px;}
+60%  {margin-right:-500px;}
+100% {margin-right:0px;}
+}
+
+@-moz-keyframes slideRight {
+0%   {margin-right:-3000px;}
+60%  {margin-right:-500px;}
+100% {margin-right:0px;}
+}
+
+@keyframes slideRight {
+0%   {margin-right:-3000px;}
+60%  {margin-right:-500px;}
+100% {margin-right:0px;}
+}
+
+.aniSubNavOpen {
+-webkit-animation-name: navOpen;
+-webkit-animation-duration: 1s;
+-webkit-animation-iteration-count: 1;
+-webkit-animation-timing-function: ease-in;
+-webkit-animation-direction:normal;
+
+-moz-animation-name: navOpen;
+-moz-animation-duration: 1s;
+-moz-animation-iteration-count: 1;
+-moz-animation-timing-function: ease-in;
+-moz-animation-direction:normal;
+
+/* Currently Not Working in browsers: Is planed for implimentation in later versions. */
+animation-name: navOpen;
+animation-duration: 1s;
+animation-iteration-count: 1;
+animation-timing-function: ease-in-;
+animation-direction: normal;
+
+-ms-animation-name: navOpen;
+-ms-animation-duration: 1s;
+-ms-animation-iteration-count: 1;
+-ms-animation-timing-function: ease-in;
+-ms-animation-direction:normal;
+}
+
+@-webkit-keyframes navOpen {
+0%   {}
+100% {max-width:500px;}
+}
+
+@-moz-keyframes navOpen {
+0%   {}
+100% {max-width:500px;}
+}
+
+@keyframes navOpen {
+0%   {}
+100% {max-width:500px;}
+}
+
+.aniSubNavClose {
+z-index:0;
+-webkit-animation-name: navClose;
+-webkit-animation-duration: 2s;
+-webkit-animation-iteration-count: 1;
+-webkit-animation-timing-function: ease-in;
+-webkit-animation-direction:normal;
+
+-moz-animation-name: navClose;
+-moz-animation-duration: 2s;
+-moz-animation-iteration-count: 1;
+-moz-animation-timing-function: ease-in;
+-moz-animation-direction:normal;
+
+/* Currently Not Working in browsers: Is planed for implimentation in later versions. */
+animation-name: navClose;
+animation-duration: 2s;
+animation-iteration-count: 1;
+animation-timing-function: ease-in;
+animation-direction: normal;
+
+-ms-animation-name: navClose;
+-ms-animation-duration: 2s;
+-ms-animation-iteration-count: 1;
+-ms-animation-timing-function: ease-in;
+-ms-animation-direction:normal;
+}
+
+@-webkit-keyframes navClose {
+0%   {max-width:500px;}
+45%  {max-width:50px;}
+50% {max-width:0px;	  }
+100% {max-width:0px;}
+}
+
+@-moz-keyframes navClose {
+0%   {max-width:500px;}
+45%  {max-width:50px;}
+50% {max-width:0px;	  }
+100% {max-width:0px;}
+}
+
+@keyframes navClose {
+0%   {max-width:500px;}
+45%  {max-width:50px;}
+50% {max-width:0px;	  }
+100% {max-width:0px;}
+}

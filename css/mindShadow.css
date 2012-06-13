@@ -1,0 +1,52 @@
+/* Class Shadows */
+.drop-shadow {
+			-webkit-box-shadow:rgba(0, 0, 0, 0.05) 0 1px 4px, rgba(0, 0, 0, 0.03) 0 0 25em inset;
+			background-color:#FFFFFF;
+			box-shadow:rgba(0, 0, 0, 0.1) 0 1px 4px, rgba(0, 0, 0, 0.0976563) 0 0 25em inset;}
+
+.drop-shadow::before, .drop-shadow::after {
+			content:'';
+			position:absolute;
+			z-index:-2;}
+
+.curved::before {
+			-webkit-box-shadow:rgba(0, 0, 0, 0.15) 0 0 7px;
+			border-bottom-left-radius:10px 100px;
+			border-bottom-right-radius:10px 100px;
+			border-top-left-radius:10px 100px;
+			border-top-right-radius:10px 100px;
+			box-shadow:rgba(0, 0, 0, 0.15) 0 0 7px;
+			bottom:5px;
+			left:0;
+			right:50%;
+			top:5px;}
+  
+.curved-hz-2::before {
+			border-bottom-left-radius:100px 10px;
+			border-bottom-right-radius:100px 10px;
+			border-top-left-radius:100px 10px;
+			border-top-right-radius:100px 10px;
+			bottom:0;
+			left:10px;
+			right:10px;
+			top:0;}
+
+.lifted {
+			border-bottom-left-radius:4px;
+			border-bottom-right-radius:4px;
+			border-top-left-radius:4px;
+			border-top-right-radius:4px;}
+			
+.lifted::before, .lifted::after {
+			-webkit-box-shadow:rgba(0, 0, 0, 0.3555) 0 15px 12px;
+			-webkit-transform:rotate(-2deg);
+			bottom:15px;
+			box-shadow:rgba(0, 0, 0, 0.3555) 0 15px 12px;
+			height:20%;
+			left:10px;
+			width:50%;}
+  
+.lifted::after {
+			-webkit-transform:rotate(2deg);
+			left:auto;
+			right:10px;}
